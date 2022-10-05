@@ -16,7 +16,8 @@ const config: GatsbyConfig = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  }],
+  pathPrefix: `/Bex-Info`,
 };
 
 export default config;
