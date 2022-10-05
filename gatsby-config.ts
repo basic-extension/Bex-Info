@@ -16,8 +16,7 @@ const config: GatsbyConfig = {
       "path": "./src/images/"
     },
     __key: "images"
-  }],
-  pathPrefix: `/blog`,
+  }]
 };
 
 export default config;
