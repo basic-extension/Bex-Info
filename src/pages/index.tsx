@@ -2,8 +2,14 @@ import * as React from "react"
 import { HeadFC, Link } from "gatsby"
 import '../styles/global.css'
 import { StaticImage } from "gatsby-plugin-image"
+import { useEffect } from "react"
 
 const IndexPage = () => {
+  useEffect(() => {
+    const element = document.documentElement;
+    const bottom = element.scrollHeight - element.clientHeight;
+    window.scroll(0, bottom);
+  })
   return (
     <div className="flex h-screen justify-center items-center bg-[#E0E5EB] bg-custom-background-pattern ">
 
