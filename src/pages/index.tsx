@@ -5,41 +5,47 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
-    <div className="grid gap-4 place-content-center h-screen bg-gradient-to-r from-purple-500 to-pink-500 p-10 ">
-      <span className="w-fit">
-        <StaticImage src="../../static/images/bexLogo.png" alt={""} width={200} />
-      </span>
+    <div className="flex h-screen justify-center items-center bg-[#E0E5EB] bg-custom-background-pattern ">
 
-      <p className="text-xl underline text-white font-bold">個人事業としてWebアプリ・アプリのフロント / バック の制作と運用を承り中</p>
+      <div className="flex min-w-[667px] rotate-[-90deg] md:rotate-[0deg] transform-gpu">
+        <div className="flex flex-col items-center">
+          <span className="w-40 md:w-fit">
+            <StaticImage src="../../static/images/bexLogo.png" alt={""} width={200} />
+          </span>
 
-      <div className="p-5 ">
-        <p className="text-xl text-white font-bold">Contact</p>
-        <div className="flex gap-4">
-        <Link to="https://twitter.com/bex_tec">
-          <div className="flex place-items-center gap-4 w-fit p-2 rounded-lg ">
-              <span className="w-12">
-                <StaticImage src="../../static/images/twitter-icon.png" alt={""} />
+          <p className="text-xl md:text-4xl font-notosans mt-4">ベーシックエクステンション</p>
+          <p className="text-base md:text-xl font-notosans text-center mt-5 text-gray-500">オリジナルアプリ制作 が可能 <br />いつもで相談 OK</p>
+          <p className="text-xs md:text-lg font-notosans text-center text-gray-500 ">※クライアント/サーバー どちらも開発します。※</p>
+        </div>
+
+        <div className="w-[10px] bg-[#C6CBD2] ml-6 mr-6" />
+
+        <div className="">
+          <Link to="mailto: bex.proprietor@gmail.com">
+            <div className="flex place-items-center gap-4 w-fit p-2 rounded-lg ">
+              <span className="w-7">
+                <StaticImage src="../../static/images/mail-icon.png" alt={""} />
               </span>
-              <p className="text-2xl text-white font-bold ">Twitter</p>
-          </div>
+              <p className="text-xl md:text-2xl font-notosans">bex.proprietor@gmail.com</p>
+            </div>
           </Link>
 
-          <Link to="mailto: bex.proprietor@gmail.com">
-          <div className="flex place-items-center gap-4 w-fit p-2 rounded-lg ">
-            <span className="w-12">
-              <StaticImage src="../../static/images/mail-icon.png" alt={""} />
-            </span>
-            <p className="text-2xl text-white font-bold">Mail</p>
-          </div>
+          <Link to="https://twitter.com/bex_tec">
+            <div className="flex place-items-center gap-4 w-fit p-2 rounded-lg ">
+              <span className="w-9">
+                <StaticImage src="../../static/images/twitter-icon.png" alt={""} />
+              </span>
+              <p className="text-xl md:text-2xl font-notosans ">@bex_tec</p>
+            </div>
           </Link>
         </div>
       </div>
 
 
-      <div className="p-5 ">
+      {/* <div className="p-5 ">
         <p className="text-xl text-white font-bold">Skill set　:</p>
         <p className="text-xl text-white font-bold">React（and Next.js）,Expo, NodeJS, Laravel, MySQL, docker</p>
-      </div>
+      </div> */}
 
 
     </div>
